@@ -2996,6 +2996,11 @@ transform: translateX(100%);
         visibility: hidden;
     }
     .btn-mobile-nav{
+        display:block;
+        visibility: visible;
+    
+    }
+    .btn-mobile-nav{
       display: flex;
       border: none;
       background: none;
