@@ -2933,7 +2933,11 @@ Primary:#e67e22
         gap: 3.2rem;
         list-style: none;
     }
-
+    .btn-mobile-nav{
+        display:block;
+        visibility: visible;
+    
+    }
     .liste:link,
     .liste:visited {
         display: inline-block;
@@ -2996,11 +3000,6 @@ transform: translateX(100%);
         visibility: hidden;
     }
     .btn-mobile-nav{
-        display:block;
-        visibility: visible;
-    
-    }
-    .btn-mobile-nav{
       display: flex;
       border: none;
       background: none;
@@ -3032,7 +3031,7 @@ transform: translateX(100%);
     .section-hero {
         display: flex;
         flex-direction: column;
-        margin: 5rem auto;
+        margin: 8rem auto;
         max-width: 25rem;
         gap: 5rem;
         align-items: center;
@@ -3041,7 +3040,7 @@ transform: translateX(100%);
     }
 
     .hero-titre {
-        font-size: 1.8rem;
+        font-size: 3.8rem;
         color: rgba(255, 255, 255, 0.50);
         text-align: center;
 
@@ -3052,6 +3051,8 @@ transform: translateX(100%);
         margin-top: 1rem;
         line-height: 2;
         text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
     }
 
     .buttons {
@@ -3071,8 +3072,8 @@ transform: translateX(100%);
     .buttton-1:link,
     .buttton-1:visited {
         background-color: hsla(288, 56%, 52%, 0.50);
-        padding: .4rem .6rem;
-        margin-right: 2rem;
+        padding: 1rem 1rem;
+        margin-right: .5rem;
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: .1rem;
@@ -3091,7 +3092,7 @@ transform: translateX(100%);
     .button-2:visited {
         background-color: transparent;
         border: 2px solid hsla(289, 100%, 34%, 0.5);
-        padding: .4rem .5rem;
+        padding: .9rem .5rem;
         margin-right: 2rem;
         font-size: 1rem;
         font-weight: bold;
@@ -3114,7 +3115,7 @@ transform: translateX(100%);
     }
 
     .img-hero {
-        width: 20rem;
+        width: 30rem;
         margin-left: 3rem;
     }
 
@@ -3536,7 +3537,7 @@ transform: translateX(100%);
 
     .section-hero-background {
         background-image: linear-gradient(#2F2E41, rgba(174, 64, 201, 0.10));
-        height: 60vh;
+        height: 100vh;
 
     }
 
