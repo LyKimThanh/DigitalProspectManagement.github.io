@@ -80,11 +80,12 @@ body {
 .liste:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.50);
-    font-weight: bolder;
+    font-weight: 600;
     letter-spacing: .2rem;
     position: relative;
+    z-index: 2;
 }
 
 .liste:hover,
@@ -92,51 +93,81 @@ body {
     color: #AE3EC9;
     transition: .3s;
 }
+
+.liste:before {
+    content: '';
+    display: block;
+    height: .1rem;
+    width: 0;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    transform: translateX(-100%);
+  
+}
+
+.liste:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    transition: .5s;
+}
+
 .barre-de-navigation {
     /* position: relative; */
 }
-.sub-menu{
+
+.navigation-listes {}
+
+.sub-menu {
     position: absolute;
-    background-color: #e0dfe600;
+    background-color: #2F2E41;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
     list-style: none;
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     opacity: 0;
-    height: 12rem;
+    height: 14rem;
     visibility: hidden;
-  justify-content: center;
-    pointer-events:none ;
+   align-items: flex-end;
+    pointer-events: none;
     text-decoration: none;
-    top: 0;
-    transform: translateY(-10rem);
-    transition: .9ms;
-   
+    top: 0%;
+
+
 }
+
 .sub-menu-liste:link,
-.sub-menu-liste:visited{  
+.sub-menu-liste:visited {
 
-text-decoration: none;
-color: rgba(255, 255, 255, 0.50);
-
-
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-weight: 600;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 1rem .5rem 1rem .5rem;
+    display: inline-block;
+    width: 15rem;
+    border: 1px solid white;
+    
 }
-.barre-de-navigation :hover .sub-menu{
+
+
+.barre-de-navigation :hover .sub-menu {
     padding: 1rem;
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(8rem);
+    transform: translateY(60%);
     transition: .5s;
-    
+    z-index: 1;
+
 
 }
+
 .sub-menu-liste:hover,
-.sub-menu-liste:active{
+.sub-menu-liste:active {
     color: #AE3EC9;
 }
+
 /* Section hero */
 
 
@@ -1953,7 +1984,7 @@ h4 {
         margin-top: 3rem;
     }
 
-   
+
 
 
     .buttton-1:link,
@@ -2059,7 +2090,7 @@ h4 {
         padding: .5rem .6rem .5rem 1.8rem;
         font-size: 1rem;
         border-radius: .5rem;
-     
+
     }
 
     /* section why */
@@ -2192,7 +2223,7 @@ h4 {
     }
 
     /* section-contact */
-  
+
 
     .section-contact {
         max-width: 50rem;
@@ -2328,7 +2359,7 @@ h4 {
         justify-content: space-between;
     }
 
- 
+
 
     .section-hero-background {
         background-image: linear-gradient(#2F2E41, rgba(174, 64, 201, 0.10));
@@ -2407,7 +2438,7 @@ h4 {
         width: 4rem;
         margin-right: 2rem;
         display: block;
-       
+
         color: white;
 
     }
@@ -2435,7 +2466,7 @@ h4 {
         width: 4rem;
         margin-right: 2rem;
         display: block;
-        
+
     }
 
     .Menu {
@@ -2480,7 +2511,7 @@ h4 {
         transition: all 0.3s;
         transform: translateX(0);
     }
-   
+
 
 
     /* Section hero */
@@ -2505,7 +2536,7 @@ h4 {
 
     .hero-description {
         padding-right: 1rem;
-margin-top: 2rem;
+        margin-top: 2rem;
         line-height: 2;
         text-align: center;
         font-size: 1.8rem;
@@ -2993,6 +3024,7 @@ margin-top: 2rem;
         width: 2rem;
     }
 }
+
 @media screen and (max-width:430px) {
 
     .section-title {
@@ -3055,7 +3087,7 @@ margin-top: 2rem;
         width: 4rem;
         margin-right: 2rem;
         display: block;
-       
+
         color: white;
 
     }
@@ -3083,7 +3115,7 @@ margin-top: 2rem;
         width: 4rem;
         margin-right: 2rem;
         display: block;
-        
+
     }
 
     .Menu {
@@ -3128,7 +3160,7 @@ margin-top: 2rem;
         transition: all 0.3s;
         transform: translateX(0);
     }
-   
+
 
 
     /* Section hero */
@@ -3153,7 +3185,7 @@ margin-top: 2rem;
 
     .hero-description {
         padding-right: 1rem;
-margin-top: 2rem;
+        margin-top: 2rem;
         line-height: 2;
         text-align: center;
         font-size: 1.6rem;
@@ -3507,7 +3539,7 @@ margin-top: 2rem;
         outline: none;
         background-color: #2f2e412a;
         color: hsla(240, 14%, 92%, 0.50);
-        font-size:.8rem;
+        font-size: .8rem;
 
     }
 
