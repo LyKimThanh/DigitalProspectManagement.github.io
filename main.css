@@ -80,10 +80,11 @@ body {
 .liste:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 0.50);
     font-weight: bolder;
     letter-spacing: .2rem;
+    position: relative;
 }
 
 .liste:hover,
@@ -91,8 +92,51 @@ body {
     color: #AE3EC9;
     transition: .3s;
 }
+.barre-de-navigation {
+    /* position: relative; */
+}
+.sub-menu{
+    position: absolute;
+    background-color: #e0dfe600;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    opacity: 0;
+    height: 12rem;
+    visibility: hidden;
+  justify-content: center;
+    pointer-events:none ;
+    text-decoration: none;
+    top: 0;
+    transform: translateY(-10rem);
+    transition: .9ms;
+   
+}
+.sub-menu-liste:link,
+.sub-menu-liste:visited{  
+
+text-decoration: none;
+color: rgba(255, 255, 255, 0.50);
 
 
+}
+.barre-de-navigation :hover .sub-menu{
+    padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(8rem);
+    transition: .5s;
+    
+
+}
+.sub-menu-liste:hover,
+.sub-menu-liste:active{
+    color: #AE3EC9;
+}
 /* Section hero */
 
 
